@@ -4,7 +4,6 @@
 #include <algorithm>
 #include <cstdlib>
 #include <ctime>
-#include <windows.h>
 #include "config.h"
 #include "utils.h"
 
@@ -20,8 +19,7 @@ void Game::printSeparator() {
 void Game::run() {
     srand(static_cast<unsigned>(time(nullptr)));
 
-    SetConsoleOutputCP(CP_UTF8);
-    SetConsoleCP(CP_UTF8);
+    system("chcp 65001 > nul");
 
     initGame();
     gameLoop();
