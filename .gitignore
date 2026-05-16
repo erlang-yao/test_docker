@@ -12,5 +12,10 @@
 # VS Code
 .vscode/
 
-# 图片文件（可选，如果需要保留请删除这行）
-*.png
+# 图片文件（源码素材，Web 资源除外）
+pic/*.png
+pic/bb/*.png
+
+# Node.js
+node_modules/
+server/dist/
